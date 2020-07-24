@@ -1,0 +1,44 @@
+
+.container {
+  height: 2269px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: grid;
+  grid-template-rows:  150px 540px 105px 105px 300px 540px 248px 300px;
+}
+.container--header {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  
+}
+.container--working {
+  
+}
+.container--searchbar {
+  
+}
+.container--moreInfo {
+  
+}
+.container--moreInfo__title {
+  
+}
+.container--moreInfo__text {
+  
+}
+.container--cards {
+  
+}
+.container--boost {
+  
+}
+.container--boost__title {
+  
+}
+.container--boost__btn {
+  
+}
+.container--footer {
+  
+}

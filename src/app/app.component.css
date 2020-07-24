@@ -1,0 +1,17 @@
+.container {
+  height: 2269px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 150px 540px 105px 105px 300px 540px 248px 300px;
+      grid-template-rows: 150px 540px 105px 105px 300px 540px 248px 300px;
+}
+
+.container--header {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+}
+/*# sourceMappingURL=app.component.css.map */
