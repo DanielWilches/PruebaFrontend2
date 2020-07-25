@@ -6,6 +6,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { WorkingComponent } from './components/working/working.component';
 import { CardsComponent } from './components/cards/cards.component';
+import { SearchComponent } from './components/search/search.component';
+import { CapitalizaPipe } from './pipes/capitaliza.pipe';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { CardsComponent } from './components/cards/cards.component';
     HeaderComponent,
     FooterComponent,
     WorkingComponent,
-    CardsComponent
+    CardsComponent,
+    SearchComponent,
+    CapitalizaPipe
   ],
   imports: [
     BrowserModule

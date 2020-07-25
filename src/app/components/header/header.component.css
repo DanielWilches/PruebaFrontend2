@@ -9,7 +9,6 @@
       -ms-flex-direction: row;
           flex-direction: row;
   background-color: var(--bg-header-working);
-  font-family: 'Roboto', sans-serif;
 }
 
 .header--img {
@@ -50,8 +49,8 @@
 }
 
 .nav--list__item {
-  color: var(--color-text);
-  font-weight: var(--fW-roboto500);
+  color: var(--bg-gray);
+  font-weight: var(--fW-Poppins500);
   text-transform: capitalize;
   width: auto;
   height: 60%;
@@ -62,7 +61,7 @@
 .nav--list__item:hover {
   -webkit-transition: .5;
   transition: .5;
-  color: #37363b;
+  color: var(--bg-VeryDarkViolet);
   cursor: pointer;
 }
 
@@ -71,7 +70,7 @@
       -ms-grid-row-align: center;
       align-self: center;
   border: none;
-  color: var(--color-text);
+  color: var(--bg-gray);
   font-weight: var(--fW-roboto500);
   background-color: white;
   margin-right: 2%;
@@ -80,6 +79,7 @@
 
 .header--btn__login:hover {
   cursor: pointer;
+  color: var(--bg-VeryDarkViolet);
 }
 
 .header--btn__signUp {
@@ -91,15 +91,15 @@
   color: white;
   border: none;
   border-radius: 20px;
-  background: var(--bg-btns);
+  background: var(--bg-cyan);
   height: 30%;
-  width: 7%;
+  width: 10%;
 }
 
 .header--btn__signUp:hover {
   cursor: pointer;
   -webkit-transition: .5s;
   transition: .5s;
-  background-color: var(--bg-btns-hover);
+  background-color: var(--bg-hover);
 }
 /*# sourceMappingURL=header.component.css.map */

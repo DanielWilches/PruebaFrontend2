@@ -2,16 +2,29 @@
   <header class="container--header">
     <app-header></app-header>
   </header>
-  <section class="container--working"></section>
-  <section class="container--searchbar" ></section>
+  <section class="container--working">
+    <app-working></app-working>
+  </section>
+  <img class="container--working__imagen" src="../assets/img/illustration-working.svg" alt="illustration-working">
+  <section class="container--searchbar" >
+    <app-search></app-search>
+  </section>
+  <div class="container--fondo" ></div>
   <section class="container--moreInfo" >
     <h2 class="container--moreInfo__title">advanced statistics</h2>
     <p class="container--moreInfo__text" > track how your links are performing across the web with our avdvanced statistics dashboard.  </p>
   </section>
-  <section class="container--cards"></section>
+  <section class="container--cards">
+    <hr class="container--cards__fraja">
+    <app-cards class="container--cards__brandRecognition" [icon]="icons.brandRecognition"  ></app-cards>
+    <app-cards class="container--cards__detailedRecords" [icon]="icons.detailedRecords" ></app-cards>
+    <app-cards class="container--cards__fullyCustomizable" [icon]="icons.fullyCustomizable" ></app-cards>
+  </section>
   <section class="container--boost">
-    <h3 class="container--boost__title" >boost your links today</h3>
+    <h3 class="container--boost__title" >{{'boost your links today' |capitaliza}}</h3>
     <button class="container--boost__btn" >get started</button>
   </section>
-  <footer class="container--footer"></footer>
+  <footer class="container--footer">
+    <app-footer></app-footer>
+  </footer>
 </main>

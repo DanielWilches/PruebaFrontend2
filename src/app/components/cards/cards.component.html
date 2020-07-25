@@ -1,1 +1,35 @@
-<p>cards works!</p>
+<div class="card">
+  <div class="card--img">
+    <img class="card--img__icon" [src]="icon" alt="icon" />
+  </div>
+  <div
+    *ngIf="icon === '../assets/img/icon-brand-recognition.svg'"
+    class="card--subcard"
+  >
+    <h5 class="card--subcard__title">brand recognition</h5>
+    <p class="card--subcard__text">
+      {{'boost your brand recognition with each click. generic links don´t mean a
+      thing. branded links help instill confidence in your content.'| capitaliza}}
+    </p>
+  </div>
+  <div
+    *ngIf="icon === '../assets/img/icon-detailed-records.svg'"
+    class="card--subcard"
+  >
+    <h5 class="card--subcard__title">detailed records</h5>
+    <p class="card--subcard__text">
+      {{'gain insights into who is clicking your links. knowing when and where
+      people engage with your content helps inform better decisions.'  |capitaliza}}
+    </p>
+  </div>
+  <div
+    *ngIf="icon === '../assets/img/icon-fully-customizable.svg'"
+    class="card--subcard"
+  >
+    <h5 class="card--subcard__title">fully customizable</h5>
+    <p class="card--subcard__text">
+      {{'improve brand awareness and contect discoverability through cuztomizable
+      linksm supercharging audience engagement' |capitaliza}}
+    </p>
+  </div>
+</div>
