@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -12,6 +13,7 @@ export class AppComponent {
     fullyCustomizable: '../assets/img/icon-fully-customizable.svg'
   };
   title = 'PruebaFrontend2';
+  constructor( ){}
 }
 interface Icons {
   brandRecognition: string;

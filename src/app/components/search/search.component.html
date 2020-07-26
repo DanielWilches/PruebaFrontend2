@@ -1,4 +1,5 @@
-<div class="box" >
-  <input class="box--search" type="text" placeholder="Shorten a link here...">
-  <button class="box--enter" type="button" >shorten it!</button>
-</div>
+<form [formGroup]="formulario"  (ngSubmit)="onSubmit(formulario)" novalidate class="box" >
+  <input   formControlName="busqueda" class="box--search" [ngClass]="{'box--search__border': bandera}" type="text" placeholder="Shorten a link here...">
+  <button class="box--enter" type="submit" >shorten it!</button>
+  <span *ngIf="bandera"  class="box--info" >{{'please add a link'|capitaliza}}</span>
+</form>
