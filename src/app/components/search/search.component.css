@@ -33,8 +33,6 @@
 }
 
 .box--search__border {
-  width: 100%;
-  height: 29%;
   border: 5px solid var(--bg-red);
 }
 
@@ -75,5 +73,60 @@
   transition: .5s;
   cursor: pointer;
   background-color: var(--bg-hover);
+}
+
+@media only screen and (max-width: 600px) {
+  .box {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 7% 35% 16% 35% 7%;
+        grid-template-rows: 7% 35% 16% 35% 7%;
+    border-radius: 10px;
+    background-image: url(../../../assets/img/bg-shorten-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .box--search {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 1;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 3;
+    height: 100%;
+    width: 80%;
+    margin: 0 7%;
+    border-radius: 10px;
+  }
+  .box--enter {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 1;
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 5;
+    margin: 0 10%;
+    width: 80%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .box--search__border {
+    border: 3px solid var(--bg-red);
+    border-radius: 10px;
+  }
+  .box--info {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 1;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 4;
+    bottom: 0;
+    font-size: 16px;
+    margin-left: 12%;
+    margin-top: 1.5%;
+  }
 }
 /*# sourceMappingURL=search.component.css.map */

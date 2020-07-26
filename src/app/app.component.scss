@@ -24,7 +24,6 @@
     grid-column-end: 3;
 }
 
-
 .container--working__imagen {
     grid-column-start: 3;
     grid-column-end: 4;
@@ -33,7 +32,6 @@
     object-fit: cover;
     clip-path: inset(0px 130px 0px 0px);
 }
-
 
 .container--searchbar {
     z-index: 3;
@@ -92,13 +90,12 @@
     grid-row-end: 8;
     display: grid;
     grid-template-rows: 100%;
-    grid-template-columns:  repeat(3, 33.3%);
-
+    grid-template-columns: repeat(3, 33.3%);
 }
 
-.container--cards__fraja {
-    grid-column-start:1 ;
-    grid-column-end:4 ;
+.container--cards__franja {
+    grid-column-start: 1;
+    grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 1;
     z-index: 1;
@@ -140,14 +137,12 @@
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
-    grid-row-end: 1;    
+    grid-row-end: 1;
     height: 100%;
     margin-top: 50%;
     width: 90%;
     // padding-left: 10px;
     justify-self: end;
-
-
 }
 
 .container--boost {
@@ -194,4 +189,146 @@
     grid-column-end: 5;
     grid-row-start: 9;
     grid-row-end: 10;
+}
+
+// pantalla 375px x 3480px
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        height: 3480px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 90px 372px 310px 72px 76px 76px 279px 1142px 300px 779px;
+    }
+    .container--header {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        width: 100%;
+        height: 100%;
+    }
+    .container--working {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .container--working__imagen {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        width: 500px;
+        margin-left: 25px;
+        margin-top: 31px;
+        height: 320px;
+        clip-path: inset(0px 150px 0px 0px);
+    }
+    .container--fondo {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 6;
+        grid-row-end: 9;
+        z-index: 2;
+        background-color: var(--bg-mInfo-cards);
+    }
+    .container--searchbar {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 7;
+        width: 90%;
+        margin: 0 5%;
+    }
+    .container--moreInfo {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 7;
+        grid-row-end: 8;
+        margin: 0;
+        width: 100%;
+    }
+    .container--moreInfo__title {
+        margin: 10px 0 20px 0;
+        font-size: 30px;
+    }
+    .container--moreInfo__text {
+        font-size: 16px;
+        margin: 0 15px;
+    }
+    .container--cards {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 8;
+        grid-row-end: 9;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 10% 35% 10% 35% 10%;
+        grid-template-rows: repeat(3,33.3%);
+    }
+    .container--cards__franja {
+        grid-row-start: 1;
+        grid-row-end: 4;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        height: 90%;
+        width: 20%;
+        justify-self: center;
+        top: 0;
+        // top:10%;
+    }
+    .container--cards__brandRecognition {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        
+    }
+    .container--cards__detailedRecords {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .container--cards__fullyCustomizable {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .container--boost{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 9;
+        grid-row-end: 10;
+        background-image: url(../assets/img/bg-boost-mobile.svg);
+        background-color: var(--bg-violet);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .container--boost__title {
+        font-size: 30PX;
+    }
+    .container--boost__btn{
+        width: 60%;
+        margin-left: 22%;
+    }
+    .container--footer{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 10;
+        grid-row-end: 11;
+    }
 }

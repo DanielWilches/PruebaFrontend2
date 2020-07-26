@@ -71,3 +71,24 @@
     color: var(--bg-cyan);
     background-color: var(--bg-cyan);
 }
+
+@media only screen and (max-width: 600px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer--logo{
+        width: 40%;
+        height: 10%;
+        margin: 10% 0 0 0 ;
+    }
+    .footer--menu{ 
+        width: 100%;
+        height: auto;
+        margin-top: 10%;
+    }
+    .footer--socialMedia {
+        width: 75%;
+    }
+}

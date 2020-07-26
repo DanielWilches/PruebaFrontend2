@@ -1,5 +1,15 @@
 <div class="header" >
   <img class="header--img" src="../../../assets/img/logo.svg" >
+  <button class="header--button__menu" [matMenuTriggerFor]="menu" ><i class="fas fa-align-justify fa-2x"></i></button>
+  <mat-menu class="header--menu" #menu="matMenu"   >
+    <button class="header--menu__opcion" mat-menu-item>features</button>
+    <button class="header--menu__opcion" mat-menu-item>pricing </button>
+    <button class="header--menu__opcion" mat-menu-item>resources</button>
+    <hr class="header-menu__separador" >
+    <button class="header--menu__opcion" mat-menu-item>login</button>
+    <button class="header--menu__signUp" mat-menu-item>sign up</button>
+  </mat-menu>
+  
   <nav class="header--nav">
     <ol class="header--nav__list">
       <ul class="nav--list__item" >features</ul>
