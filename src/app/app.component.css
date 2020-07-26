@@ -224,6 +224,7 @@
   border: none;
   border-radius: 50px;
   margin-left: 42%;
+  outline: none;
 }
 
 .container--boost__btn:hover {

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ConexionService } from '../../services/conexion.service';
 import { FormGroup, FormControl, Validators, } from '@angular/forms';
-
+import { ClipboardService } from 'ngx-clipboard';
 
 @Component({
   selector: 'app-search',
@@ -13,7 +13,7 @@ export class SearchComponent implements OnInit {
   urlAcortado: string;
   bandera: boolean;
   patron = '^https?:\/\/[\w\-]+(\.[\w\-]+)+[/#?]?.*$';
-  constructor(private conexion: ConexionService) {
+  constructor(private conexion: ConexionService, private copiService: ClipboardService) {
     this.validacion();
   }
 
@@ -35,7 +35,10 @@ export class SearchComponent implements OnInit {
     const resulObser$ = this.conexion.postLink(value);
     resulObser$.subscribe((val: any) => {
       console.log(`https://rel.ink/${val.hashid}`);
-      return this.urlAcortado = `https://rel.ink/${val.hashid}`;
+      this.urlAcortado = `https://rel.ink/${val.hashid}`;
+      this.copiService.copyFromContent(this.urlAcortado);
+      alert(`link: ${this.urlAcortado} copiado en portapapeles`);
+      return this.urlAcortado;
     });
   }
 

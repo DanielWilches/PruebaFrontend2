@@ -419,6 +419,22 @@ template {
     display: none;
 }
 
+.cdk-overlay-pane {/* contenedor */
+    padding: 0;
+    margin: 10% 5% 0 10%; 
+    position: relative;
+    width: 80%;
+    height: 400px;
+}
+
+.mat-menu-panel {/*menu*/
+    width: 100%;
+    background-color: var(--bg-violet);
+}
+
+.mat-menu-content {/*contenido menu*/
+}
+
 
 /* variables */
 
@@ -427,22 +443,23 @@ template {
     /* ##primarios */
     --bg-cyan: hsl(180, 66%, 49%);
     --bg-violet: hsl(257, 27%, 26%);
+    --bg-violet-def: hsl(257, 27%, 26%, 0.1);
     /* ### Secondary */
     --bg-red: hsl(0, 87%, 67%);
     /* ##neutral */
-    --bg-gray:hsl(0, 0%, 75%); /*text*/
-    --bg-GrayishViolet: hsl(257, 7%, 63%); /*input*/
-    --bg-VeryDarkBlue: hsl(255, 11%, 22%); /*title*/
-    --bg-VeryDarkViolet: hsl(260, 8%, 14%); /*footer*/
+    --bg-gray: hsl(0, 0%, 75%);
+    /*text*/
+    --bg-GrayishViolet: hsl(257, 7%, 63%);
+    /*input*/
+    --bg-VeryDarkBlue: hsl(255, 11%, 22%);
+    /*title*/
+    --bg-VeryDarkViolet: hsl(260, 8%, 14%);
+    /*footer*/
     /* otros */
     --bg-header-working: hsl(0, 0%, 100%);
     --bg-mInfo-cards: hsl(230, 25%, 95%);
     --bg-hover: hsl(180, 58%, 75%);
-
     /* font-family: 'Poppins', sans-serif; */
     --fW-Poppins500: 500;
     --fW-Poppins700: 700;
-    
-
-
 }

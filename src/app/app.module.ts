@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 // modulos de peticion de recursos
 import { HttpClientModule } from '@angular/common/http';
+// rutas 
+import { AppRoutingModule } from './app-routing.module';
 // componentes
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -15,6 +17,7 @@ import { CapitalizaPipe } from './pipes/capitaliza.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatMenuModule} from '@angular/material/menu';
+import { ClipboardModule } from 'ngx-clipboard';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,8 @@ import {MatMenuModule} from '@angular/material/menu';
     WorkingComponent,
     CardsComponent,
     SearchComponent,
-    CapitalizaPipe
+    CapitalizaPipe,
+
   ],
   imports: [
     BrowserModule,
@@ -32,7 +36,9 @@ import {MatMenuModule} from '@angular/material/menu';
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    MatMenuModule
+    MatMenuModule,
+    ClipboardModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

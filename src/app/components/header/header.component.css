@@ -79,6 +79,7 @@
   background-color: white;
   margin-right: 2%;
   text-transform: capitalize;
+  outline: none;
 }
 
 .header--btn__login:hover {
@@ -87,6 +88,7 @@
 }
 
 .header--btn__signUp {
+  outline: none;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -146,11 +148,47 @@
     width: 25%;
     margin-top: 5%;
     margin-left: 35%;
+    outline: none;
   }
   .header--menu {
     width: 400px;
     height: 384px;
     border: 1px solid black;
+  }
+  .header--menu__opcion {
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    font-weight: var(--fW-Poppins700);
+    margin-top: 7%;
+  }
+  .header--menu__opcion:hover {
+    cursor: pointer;
+    background-color: var(--bg-violet-def);
+  }
+  .header-menu__separador {
+    margin-top: 10%;
+    margin-bottom: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    border-radius: 10px;
+    border: 1px solid var(--bg-gray);
+  }
+  .header--menu__signUp {
+    background-color: var(--bg-cyan);
+    width: 80%;
+    border-radius: 20px;
+    margin: 5% 10%;
+    font-size: 18px;
+    font-weight: var(--fW-Poppins700);
+    color: white;
+    text-align: center;
+    outline: none;
+  }
+  .header--menu__signUp:hover {
+    background-color: var(--bg-hover);
   }
 }
 /*# sourceMappingURL=header.component.css.map */

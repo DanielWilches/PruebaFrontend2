@@ -42,6 +42,7 @@
   margin-top: 10px;
   height: 15%;
   width: 30%;
+  outline: none;
   text-transform: capitalize;
 }
 
