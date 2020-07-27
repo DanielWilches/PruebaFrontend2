@@ -1,6 +1,10 @@
 <div class="card">
+  <!-- <p>{{ icon }}</p> -->
   <div class="card--img">
-    <img class="card--img__icon" [src]="icon" alt="icon" />
+    <div *ngIf="icon === '../assets/img/icon-brand-recognition.svg'"  class="card--img__icon brandrecognition"></div>
+    <div *ngIf="icon === '../assets/img/icon-detailed-records.svg'"  class="card--img__icon detailed-records"></div>
+    <div *ngIf="icon === '../assets/img/icon-fully-customizable.svg'"  class="card--img__icon fully-customizable"></div>
+    <!-- <img class="card--img__icon" [src]="icon" alt="icon" /> -->
   </div>
   <div
     *ngIf="icon === '../assets/img/icon-brand-recognition.svg'"

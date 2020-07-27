@@ -26,11 +26,14 @@
 
 .container--working__imagen {
     grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 3;
+    background-image: url(../assets/img/illustration-working.svg);
+    background-position: left;
+    background-repeat: no-repeat;
     object-fit: cover;
-    clip-path: inset(0px 130px 0px 0px);
+    clip-path: inset(0px 2px 0px 0px);
 }
 
 .container--searchbar {
@@ -220,7 +223,9 @@
         grid-column-end: 2;
         grid-row-start: 2;
         grid-row-end: 3;
+        background-position: center;
         width: 500px;
+        background-size: 100% 100%;
         margin-left: 25px;
         margin-top: 31px;
         height: 320px;

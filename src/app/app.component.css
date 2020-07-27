@@ -33,14 +33,17 @@
 .container--working__imagen {
   -ms-grid-column: 3;
       grid-column-start: 3;
-  grid-column-end: 4;
+  grid-column-end: 5;
   -ms-grid-row: 2;
       grid-row-start: 2;
   grid-row-end: 3;
+  background-image: url(../assets/img/illustration-working.svg);
+  background-position: left;
+  background-repeat: no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-clip-path: inset(0px 130px 0px 0px);
-          clip-path: inset(0px 130px 0px 0px);
+  -webkit-clip-path: inset(0px 2px 0px 0px);
+          clip-path: inset(0px 2px 0px 0px);
 }
 
 .container--searchbar {
@@ -279,7 +282,9 @@
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 3;
+    background-position: center;
     width: 500px;
+    background-size: 100% 100%;
     margin-left: 25px;
     margin-top: 31px;
     height: 320px;

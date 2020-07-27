@@ -12,7 +12,7 @@ export class AppComponent {
     detailedRecords: '../assets/img/icon-detailed-records.svg',
     fullyCustomizable: '../assets/img/icon-fully-customizable.svg'
   };
-  title = 'PruebaFrontend2';
+  title = 'Prueba Frontend';
   constructor( ){}
 }
 interface Icons {

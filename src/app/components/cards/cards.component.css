@@ -28,10 +28,23 @@
 }
 
 .card--img__icon {
-  margin-top: 20%;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  width: 60%;
+  height: 60%;
+  background-size: 100% 100%;
+  margin-top: 19%;
+  margin-left: 19%;
+}
+
+.brandrecognition {
+  background-image: url(../../../assets/img/icon-brand-recognition.svg);
+}
+
+.detailed-records {
+  background-image: url(../../../assets/img/icon-detailed-records.svg);
+}
+
+.fully-customizable {
+  background-image: url(../../../assets/img/icon-fully-customizable.svg);
 }
 
 .card--subcard {

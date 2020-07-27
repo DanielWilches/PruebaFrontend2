@@ -13,6 +13,9 @@
     margin-bottom: 5%;
     margin-left: 10%;
     margin-right: 14%;
+    background-image: url(../../../assets/img/logos.svg);
+    // fill: white;
+    background-repeat: no-repeat;
 }
 
 .footer--menu {
@@ -62,6 +65,7 @@
 
 .footer--socialMedia__url {
     cursor: none;
+    color: white;
     text-decoration: none;
 }
 
@@ -69,7 +73,6 @@
     transition: .5s;
     cursor: pointer;
     color: var(--bg-cyan);
-    background-color: var(--bg-cyan);
 }
 
 @media only screen and (max-width: 600px) {

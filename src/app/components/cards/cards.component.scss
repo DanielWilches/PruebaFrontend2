@@ -1,6 +1,6 @@
 .card {
     z-index: 1;
-    width:100%;
+    width: 100%;
     height: 50%;
     background-color: white;
     border-radius: 10px;
@@ -21,8 +21,21 @@
 }
 
 .card--img__icon {
-    margin-top: 20%;
-    align-self: center;
+    width: 60%;
+    height: 60%;
+    background-size: 100% 100%;
+    margin-top: 19%;
+    margin-left: 19%;
+
+}
+.brandrecognition {
+    background-image: url(../../../assets/img/icon-brand-recognition.svg);
+}
+.detailed-records {
+    background-image: url(../../../assets/img/icon-detailed-records.svg);
+}
+.fully-customizable {
+    background-image: url(../../../assets/img/icon-fully-customizable.svg);
 }
 
 .card--subcard {
@@ -46,14 +59,14 @@
     font-weight: var(--fW-Poppins500);
     color: var(--bg-gray);
 }
-@media only screen and (max-width: 600px){
+
+@media only screen and (max-width: 600px) {
     .card {
         height: 80%;
     }
-    .card--img{
+    .card--img {
         height: 25%;
         width: 25%;
         margin-left: 37%;
     }
-
 }

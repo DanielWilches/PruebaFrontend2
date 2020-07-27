@@ -37,7 +37,7 @@ export class SearchComponent implements OnInit {
       console.log(`https://rel.ink/${val.hashid}`);
       this.urlAcortado = `https://rel.ink/${val.hashid}`;
       this.copiService.copyFromContent(this.urlAcortado);
-      alert(`link: ${this.urlAcortado} copiado en portapapeles`);
+      alert(`Su enlace :'${this.urlAcortado}' ha sido copiado en el portapapeles `);
       return this.urlAcortado;
     });
   }
