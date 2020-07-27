@@ -419,20 +419,20 @@ template {
     display: none;
 }
 
-.cdk-overlay-pane {/* contenedor */
+.cdk-overlay-pane {
+    /* contenedor */
     padding: 0;
-    margin: 10% 5% 0 10%; 
+    margin: 10% 5% 0 10%;
     position: relative;
-    width: 80%;
+    width: 80%!important;
     height: 400px;
+    left: 10px;
 }
 
-.mat-menu-panel {/*menu*/
+.mat-menu-panel {
+    /*menu*/
     width: 100%;
     background-color: var(--bg-violet);
-}
-
-.mat-menu-content {/*contenido menu*/
 }
 
 

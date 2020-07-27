@@ -30,6 +30,7 @@
   border: none;
   font-weight: var(--fW-Poppins500);
   color: var(--bg-GrayishViolet);
+  outline: none;
 }
 
 .box--search__border {

@@ -59,6 +59,17 @@
     font-weight: var(--fW-Poppins500);
     color: var(--bg-gray);
 }
+@media only screen and (max-width: 988px) {
+    .card{
+        height: 70%;
+        width: 100%;
+    }
+    .card--img {
+        height: 20%;
+        width: 20%;
+        padding-top: 10px;
+    }
+}
 
 @media only screen and (max-width: 600px) {
     .card {
