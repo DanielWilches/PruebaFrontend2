@@ -34,7 +34,7 @@ export class SearchComponent implements OnInit {
   getSrc(value: string): void {
     const resulObser$ = this.conexion.postLink(value);
     resulObser$.subscribe((val: any) => {
-      console.log(`https://rel.ink/${val.hashid}`);
+      this.formulario.reset();
       this.urlAcortado = `https://rel.ink/${val.hashid}`;
       this.copiService.copyFromContent(this.urlAcortado);
       alert(`Su enlace :'${this.urlAcortado}' ha sido copiado en el portapapeles `);
